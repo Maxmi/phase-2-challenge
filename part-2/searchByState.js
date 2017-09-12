@@ -1,10 +1,8 @@
 const fs = require('fs');
 const state = process.argv[2];
-
 const rawData = fs.readFileSync('clients.json');
 
 let obj = JSON.parse(rawData);
-
 let selectedData = [];
 
 for(var i = 0; i < obj.length; i++) {
@@ -19,5 +17,5 @@ for(var i = 0; i < obj.length; i++) {
   }
 }
 
-console.log('Finding clients in state ' + state + '...');
+console.log(`Finding clients in state ${state} ...`);
 console.log(selectedData);
