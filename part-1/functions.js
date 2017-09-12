@@ -1,15 +1,10 @@
+//if you want to replace these functions with new ones - don't delete these
+//just comment them or save somewhere
+
 // Show a weekday
 function weekday(date) {
   const weekday = date.getDay();
-  const dayNames = [
-  'Sun',
-  'Mon',
-  'Tue',
-  'Wed',
-  'Thu',
-  'Fri',
-  'Sat'
-];
+  const dayNames = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
   return dayNames[weekday];
 }
 
