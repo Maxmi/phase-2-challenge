@@ -1,17 +1,18 @@
 const fs = require('fs');
 const rawData = fs.readFileSync('clients.json');
 
-let obj = JSON.parse(rawData);
+let repList = JSON.parse(rawData);
 let selectedData = [];
 let searchName = process.argv[2];
 
 if (searchName) {
   searchName = searchName.charAt(0).toUpperCase() + searchName.slice(1);
-  for (var i = 0; i < obj.length; i++) {
-    if (obj[i].rep_name.startsWith(searchName)) {
+  for (var i = 0; i < repList.length; i++) {
+    const item = repList[i];
+    if (item.rep_name.startsWith(searchName)) {
       selectedData.push({
-        id: obj[i].id,
-        rep_name: obj[i].rep_name
+        id: item.id,
+        rep_name: item.rep_name
       });
     }
   }

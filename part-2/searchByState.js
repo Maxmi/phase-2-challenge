@@ -2,18 +2,19 @@ const fs = require('fs');
 const state = process.argv[2];
 const rawData = fs.readFileSync('clients.json');
 
-let obj = JSON.parse(rawData);
+let repList = JSON.parse(rawData);
 let selectedData = [];
 
 if (state) {
-  for (var i = 0; i < obj.length; i++) {
-    if (obj[i].state === state) {
+  for (var i = 0; i < repList.length; i++) {
+    const item = repList[i];
+    if (item.state === state) {
       selectedData.push({
-        id: obj[i].id,
-        rep_name: obj[i].rep_name,
-        company: obj[i].company,
-        city: obj[i].city,
-        state: obj[i].state
+        id: item.id,
+        rep_name: item.rep_name,
+        company: item.company,
+        city: item.city,
+        state: item.state
       });
     }
   }
