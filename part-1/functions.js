@@ -19,6 +19,10 @@ function snippet(string, maxlength) {
   return string;
 }
 
+if(a === 3) {
+  console.log(3);
+} console.log('hi')
+
 // Get number of object properties
 function numProps(obj) {
   if(!obj) {

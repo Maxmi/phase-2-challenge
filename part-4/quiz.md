@@ -20,7 +20,7 @@ fiddler             mono-mdk            slack
 
 
 On a UNIX computer, how do you find the process id of a running process?
--ps -a will show all processes and their id 
+-ps -a will show all processes and their id
 
 In a terminal, what does control-c do?
 - stops running process
@@ -69,7 +69,7 @@ What does your ~/.gitconfig have in it? (paste the whole file here)
 [user]
   name = Gulmira Berdalieva
   email = gulmira2410@gmail.com
-  
+
 [core]
   excludesfile = ~/.gitignore
   autocrlf = false
@@ -129,7 +129,7 @@ What keyboard shortcut do you use, in your editor, to go to a file in the projec
 
 What files or folders do you want all git repositories to ignore?
 
-- right now since we are working with Node, we need to ignore all npm-modules and log files. 
+- right now since we are working with Node, we need to ignore all npm-modules and log files.
 
 What is the main difference between == and === in JavaScript?
 

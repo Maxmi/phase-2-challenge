@@ -3,10 +3,10 @@ const { weekday, snippet, numProps, filterBetween } = require('../functions');
 
 describe('weekday', function() {
   it('should return Sun for Sep 10, 2017', function() {
-    expect(weekday(new Date(2017,08,10))).to.equal('Sun');
+    expect(weekday((2017,08,10))).to.equal('Sun');
   });
   it('should return error message if date not provided', function() {
-    expect(weekday()).to.equal('Date object not provided');
+    expect(weekday('hello')).to.equal('Date object not provided');
   });
 });
 
